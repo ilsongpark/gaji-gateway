@@ -36,6 +36,11 @@ spring:
           uri: http://localhost:8087
           predicates:
             - Path=/notices/**
+        - id: notilist
+          uri: http://localhost:8089
+          predicates:
+            - Path=/notilists/**
+
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -83,6 +88,11 @@ spring:
           uri: http://notice:8080
           predicates:
             - Path=/notices/**
+        - id: notilist
+          uri: http://localhost:8080
+          predicates:
+            - Path=/notilists/**
+
       globalcors:
         corsConfigurations:
           '[/**]':
