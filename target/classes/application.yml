@@ -11,23 +11,31 @@ spring:
         - id: purchase
           uri: http://localhost:8081
           predicates:
-            - Path=/purchases/** 
+            - Path=/purchases/**
         - id: product
           uri: http://localhost:8082
           predicates:
-            - Path=/products/** 
+            - Path=/products/**
         - id: member
           uri: http://localhost:8083
           predicates:
-            - Path=/members/** 
+            - Path=/members/**
         - id: payment
           uri: http://localhost:8084
           predicates:
-            - Path=/payments/** 
+            - Path=/payments/**
         - id: mypage
           uri: http://localhost:8085
           predicates:
             - Path= /myPages/**
+        - id: productcheck
+          uri: http://localhost:8086
+          predicates:
+            - Path=/productChecks/**
+        - id: notice
+          uri: http://localhost:8087
+          predicates:
+            - Path=/notices/**
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -50,23 +58,31 @@ spring:
         - id: purchase
           uri: http://purchase:8080
           predicates:
-            - Path=/purchases/** 
+            - Path=/purchases/**
         - id: product
           uri: http://product:8080
           predicates:
-            - Path=/products/** 
+            - Path=/products/**
         - id: member
           uri: http://member:8080
           predicates:
-            - Path=/members/** 
+            - Path=/members/**
         - id: payment
           uri: http://payment:8080
           predicates:
-            - Path=/payments/** 
+            - Path=/payments/**
         - id: mypage
           uri: http://mypage:8080
           predicates:
             - Path= /myPages/**
+        - id: productcheck
+          uri: http://productcheck:8080
+          predicates:
+            - Path=/productChecks/**
+        - id: notice
+          uri: http://notice:8080
+          predicates:
+            - Path=/notices/**
       globalcors:
         corsConfigurations:
           '[/**]':
